@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Meta tags -->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- GOOGLE FONT -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
-            rel="stylesheet"
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Cool generator</title>
+  </head>
+  <body id="gradient">
+    <div class="animate__animated animate__backInDown">
+      <h1>Background generator</h1>
+
+      <div id="inputs-div">
+        <input
+          class="color-input color1"
+          type="color"
+          name="color1"
+          value="#E59866"
+        />
+        <input
+          class="color-input color2"
+          type="color"
+          name="color2"
+          value="#dc7633"
+        />
+        <input
+          class="color-input color3"
+          type="color"
+          name="color3"
+          value="#ba4a00"
         />
 
-        <!-- CSS Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <button id="random-gradient-btn">Generate Random Gradient</button>
+        <img id="go-back" src="back-arrow.svg" />
+      </div>
 
-        <!-- Animate.css -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
+      <h2>Current CSS Background</h2>
+      <div
+        id="css-code-div"
+        class="animate__animated animate__backInLeft animate__delay-1s"
+      >
+        <img id="css-image" src="css.svg" />
+        <h3></h3>
+      </div>
+    </div>
 
-        <title>Cool generator</title>
-    </head>
-    <body id="gradient">
-        <div class="animate__animated animate__backInDown">
-            <h1>Cool generator</h1>
-
-            <div id="inputs-div">
-                <input
-                    class="color-input color1"
-                    type="color"
-                    name="color1"
-                    value="#E59866"
-                />
-                <input
-                    class="color-input color2"
-                    type="color"
-                    name="color2"
-                    value="#dc7633"
-                />
-                <input
-                    class="color-input color3"
-                    type="color"
-                    name="color3"
-                    value="#ba4a00"
-                />
-
-                <button id="random-gradient-btn">
-                    Generate Random Gradient
-                </button>
-                <img id="go-back" src="back-arrow.svg" />
-            </div>
-
-            <h2>Current CSS Background</h2>
-            <div
-                id="css-code-div"
-                class="animate__animated animate__backInLeft animate__delay-1s"
-            >
-                <img id="css-image" src="css.svg" />
-                <h3></h3>
-            </div>
-        </div>
-
-        <script type="text/javascript" src="script.js"></script>
-    </body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
